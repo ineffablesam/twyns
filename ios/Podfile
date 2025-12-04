@@ -1,0 +1,67 @@
+platform :ios, '17.0'
+
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
+project 'Runner', {
+  'Debug' => :debug,
+  'Profile' => :release,
+  'Release' => :release,
+}
+
+def flutter_root
+  generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
+  unless File.exist?(generated_xcode_build_settings_path)
+    raise "#{generated_xcode_build_settings_path} must exist. Run flutter pub get first."
+  end
+
+  File.foreach(generated_xcode_build_settings_path) do |line|
+    matches = line.match(/FLUTTER_ROOT\=(.*)/)
+    return matches[1].strip if matches
+  end
+
+  raise "FLUTTER_ROOT not found. Delete Generated.xcconfig and run flutter pub get again."
+end
+
+# ✅ CORRECT WAY — DO NOT CHANGE
+require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
+
+flutter_ios_podfile_setup
+
+# 🔧 FIX: Use working LTS version of ffmpeg-kit
+# pod 'ffmpeg-kit-ios-https', :podspec => 'https://raw.githubusercontent.com/arthenica/ffmpeg-kit/releases/tag/v6.0.LTS/ffmpeg-kit-ios-https.podspec'
+
+target 'Runner' do
+  use_frameworks!       # Needed for Swift Plugins
+  # DO NOT ADD use_modular_headers! (breaks Swift)
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+end
+
+# Keep test target (harmless)
+target 'RunnerTests' do
+  inherit! :search_paths
+end
+
+# ---------------------------
+#    SAFE POST INSTALL
+# ---------------------------
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    # Default Flutter settings
+    flutter_additional_ios_build_settings(target)
+
+    target.build_configurations.each do |config|
+
+      # Force iOS 14 for all pods
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+
+      # Permissions plugin flags
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
+        '$(inherited)',
+        'PERMISSION_CAMERA=0',
+        'PERMISSION_MICROPHONE=1',
+        'PERMISSION_PHOTOS=0',
+        'PERMISSION_MEDIA_LIBRARY=0',
+      ]
+    end
+  end
+end

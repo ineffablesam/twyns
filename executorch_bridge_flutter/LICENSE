@@ -1,0 +1,100 @@
+MIT License
+
+Copyright (c) 2025 Samuel Philip
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+--------------------------------------------------------------------
+THIRD-PARTY NOTICES AND ATTRIBUTIONS
+--------------------------------------------------------------------
+
+This project integrates with the following third-party technologies.
+Their respective licenses and terms apply in addition to the MIT License.
+
+--------------------------------------------------------------------
+ExecuTorch (PyTorch Mobile Runtime)
+--------------------------------------------------------------------
+ExecuTorch is developed and maintained by Meta Platforms, Inc.
+Source: https://github.com/pytorch/executorch
+
+ExecuTorch is made available under the BSD 3-Clause License:
+https://github.com/pytorch/executorch/blob/main/LICENSE
+
+This Flutter plugin does not modify ExecuTorch source code. It provides a
+bridge to load and execute ExecuTorch-compatible `.pte` models. All rights,
+trademarks, and intellectual property belong to their respective owners.
+
+--------------------------------------------------------------------
+Hugging Face Models & Tokenizers
+--------------------------------------------------------------------
+This project may load user-provided models or tokenizers originating from
+Hugging Face (https://huggingface.co).
+
+The licensing terms of those models remain governed entirely by the original
+authors and may include, but are not limited to:
+
+- MIT License
+- Apache License 2.0
+- BSD Licenses
+- Creative Commons Licenses
+- Meta Llama Community License
+- Proprietary or Restricted Licenses
+
+Users are solely responsible for complying with the license obligations
+associated with any model or tokenizer they load into the application.
+
+This plugin does NOT redistribute any Hugging Face models, tokenizers, or data.
+
+--------------------------------------------------------------------
+Meta Llama Models (If Used)
+--------------------------------------------------------------------
+If Llama-family models (Llama 1–3) are used with this plugin, they are governed
+by the Meta Llama License:
+https://ai.meta.com/llama/license/
+
+This plugin does not include or distribute Llama weights, tokenizers, or assets.
+It merely allows applications to load `.pte` files that the user legally possesses.
+
+--------------------------------------------------------------------
+Model Redistribution Notice
+--------------------------------------------------------------------
+This project DOES NOT include or redistribute any:
+
+- Pretrained large language models
+- Tokenizers
+- Hugging Face assets
+- Gemma, Phi, Mistral, Llama, or other proprietary model weights
+- ExecuTorch binaries beyond those allowed by platform distributions
+
+Developers must ensure they hold redistribution rights for any model files
+they package with their app.
+
+--------------------------------------------------------------------
+Disclaimer
+--------------------------------------------------------------------
+This project provides only the technical mechanism to run ExecuTorch-based
+models. The authors are not responsible for:
+
+- The behavior, accuracy, or safety of any loaded model
+- Any misuse or harmful output of AI models
+- Violations of third-party licenses by downstream developers
+- Compliance with local regulations or usage restrictions
+
+All AI output should be reviewed for safety and used responsibly.

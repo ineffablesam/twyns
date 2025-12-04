@@ -1,0 +1,43 @@
+PODS:
+  - audioplayers_darwin (0.0.1):
+    - Flutter
+  - ffmpeg_kit_flutter (6.0.3):
+    - ffmpeg_kit_flutter/ffmpeg_kit_ios_local (= 6.0.3)
+    - Flutter
+  - ffmpeg_kit_flutter/ffmpeg_kit_ios_local (6.0.3):
+    - Flutter
+  - Flutter (1.0.0)
+  - mic_stream_recorder (0.0.1):
+    - Flutter
+  - permission_handler_apple (9.3.0):
+    - Flutter
+
+DEPENDENCIES:
+  - audioplayers_darwin (from `.symlinks/plugins/audioplayers_darwin/ios`)
+  - ffmpeg_kit_flutter (from `.symlinks/plugins/ffmpeg_kit_flutter/ios`)
+  - Flutter (from `Flutter`)
+  - mic_stream_recorder (from `.symlinks/plugins/mic_stream_recorder/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+
+EXTERNAL SOURCES:
+  audioplayers_darwin:
+    :path: ".symlinks/plugins/audioplayers_darwin/ios"
+  ffmpeg_kit_flutter:
+    :path: ".symlinks/plugins/ffmpeg_kit_flutter/ios"
+  Flutter:
+    :path: Flutter
+  mic_stream_recorder:
+    :path: ".symlinks/plugins/mic_stream_recorder/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+
+SPEC CHECKSUMS:
+  audioplayers_darwin: ccf9c770ee768abb07e26d90af093f7bab1c12ab
+  ffmpeg_kit_flutter: e7449f74ff7dd97fab1b479c862f7f72ff1127ca
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  mic_stream_recorder: 27d2d1225563a3a28bf4019fc5cc198cffd7dad1
+  permission_handler_apple: 4ed2196e43d0651e8ff7ca3483a069d469701f2d
+
+PODFILE CHECKSUM: 85b18efb4a57a5cfb12da8d682c892fc16355cd1
+
+COCOAPODS: 1.16.2
