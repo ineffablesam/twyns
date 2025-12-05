@@ -32,6 +32,8 @@ This isn't just another chatbot—it's a **Digital Twin** that lives on your dev
 | ![](https://i.postimg.cc/50RGXFZ6/1.png) | ![](https://i.postimg.cc/mD5qPF0C/2.png) | ![](https://i.postimg.cc/G25N4sZF/3.png) |
 | ![](https://i.postimg.cc/26KJ1BP7/4.png) | ![](https://i.postimg.cc/50RGXFZw/6.png) | ![](https://i.postimg.cc/ydb5DSwj/7.png) |
 | ![](https://i.postimg.cc/D04NLwTc/8.png) | ![](https://i.postimg.cc/Y0LPYCHb/9.png) | ![](https://i.postimg.cc/qq6FyvTm/10.png) |
+| ![](https://i.postimg.cc/HsGb491D/11-1.png) | ![](https://i.postimg.cc/ZnvQp5S7/11.png) | ![](https://i.postimg.cc/rsRHxwkB/12.png) |
+| ![](https://i.postimg.cc/J0HFZz8w/13.png) | ![](https://i.postimg.cc/8cfYMzGV/14.png) | ![](https://i.postimg.cc/NF2nmjtv/15.png) |
 
 ---
 
