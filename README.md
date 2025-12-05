@@ -471,7 +471,7 @@ The Python server hosts the model files for the Flutter app to download on deman
 
 ---
 
-## 📄 License
+## License
 
 MIT License - Open-sourced post-hackathon including:
 - Complete `executorch_bridge_flutter` source
@@ -482,7 +482,7 @@ MIT License - Open-sourced post-hackathon including:
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **ARM**: Revolutionary processors enabling edge AI
 - **PyTorch/Meta**: ExecuTorch and Llama models
@@ -497,21 +497,26 @@ MIT License - Open-sourced post-hackathon including:
 
 - **GitHub**: https://github.com/ineffablesam/twyns
 - **Demo Video**: https://youtu.be/2ouiMpqdZmE
-- **Executorch Bridge Flutter Documentation**: [ARM Optimization Guide]
-- **Email**: samuelp@stevens.edu
-
+- **Executorch Bridge Flutter Documentation**: https://pub.dev/packages/executorch_bridge_flutter
 ---
 
-## 🎯 Conclusion
+## Creators of Twyns
+
+| **Samuel Philip** | **Anish Ganapathi** |  |
+|:----------------:|:-----------------:|:----------------:|
+| ✉️ samuelp@stevens.edu <br> 🔗 [LinkedIn](http://linkedin.com/in/samuel-philip-v/) <br> 🐱 [GitHub](https://github.com/ineffablesam) | ✉️ anish@example.com <br> 🔗 [LinkedIn](https://www.linkedin.com/in/anish-ganapathi/) <br> 🐱 [GitHub](https://github.com/anishganapathi/) |  |
+
+## Conclusion
 
 Twyns represents a paradigm shift in mobile AI—from cloud dependence to edge empowerment.
 
 By building a custom ARM-optimized bridge and leveraging every aspect of ARM architecture (NEON, big.LITTLE, UMA, TrustZone), we've proven:
 
-✅ ARM processors can run billion-parameter LLMs
-✅ On-device AI is superior in latency, privacy, accessibility
-✅ Mobile devices are powerful AI computers
-✅ The future of AI is distributed, private, ARM-powered
+- [x] ARM processors can run billion-parameter LLMs
+- [x] On-device AI is superior in latency, privacy, accessibility
+- [x] Mobile devices are powerful AI computers
+- [x] The future of AI is distributed, private, ARM-powered
+
 
 **This is the ARM-powered AI revolution. This is Twyns.**
 
