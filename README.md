@@ -1,5 +1,5 @@
 <div align="left" style="display:flex; align-items:center; justify-content:start; gap:1px;">
-  <img src="https://i.postimg.cc/nzrV8B4K/logo-rounded.png" width="60" />
+  <img src="https://i.postimg.cc/76rRykrk/banner-min.png" width="60" />
   <h1 style="margin-left : 20px;"><b>TwynAI | Your Fully Private Second AI Brain</b></h1>
 </div>
 
