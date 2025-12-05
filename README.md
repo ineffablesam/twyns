@@ -27,38 +27,11 @@ This isn't just another chatbot—it's a **Digital Twin** that lives on your dev
 
 ## 📸 Screenshots
 
-<table style="border:1px solid #d9d9d9; border-collapse:collapse; width:100%;">
-  <tr style="border:1px solid #e0e0e0;">
-    <td colspan="3" style="padding:16px; border:1px solid #e0e0e0;">
-      <div style="display:flex; align-items:center; justify-content:center; gap:12px;">
-        <img src="https://i.postimg.cc/nzrV8B4K/logo-rounded.png" width="60" />
-        <h3 style="margin:0;"><b>TwynAI | Your Fully Private Second AI Brain</b></h3>
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/50RGXFZ6/1.png" /></td>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/mD5qPF0C/2.png" /></td>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/G25N4sZF/3.png" /></td>
-  </tr>
-
-  <tr>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/26KJ1BP7/4.png" /></td>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/50RGXFZw/6.png" /></td>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/ydb5DSwj/7.png" /></td>
-  </tr>
-
-  <tr>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/D04NLwTc/8.png" /></td>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/Y0LPYCHb/9.png" /></td>
-    <td style="border:1px solid #e0e0e0;"><img src="https://i.postimg.cc/qq6FyvTm/10.png" /></td>
-  </tr>
-</table>
-
-
-
----
+| | | |
+|:---:|:---:|:---:|
+| ![](https://i.postimg.cc/50RGXFZ6/1.png) | ![](https://i.postimg.cc/mD5qPF0C/2.png) | ![](https://i.postimg.cc/G25N4sZF/3.png) |
+| ![](https://i.postimg.cc/26KJ1BP7/4.png) | ![](https://i.postimg.cc/50RGXFZw/6.png) | ![](https://i.postimg.cc/ydb5DSwj/7.png) |
+| ![](https://i.postimg.cc/D04NLwTc/8.png) | ![](https://i.postimg.cc/Y0LPYCHb/9.png) | ![](https://i.postimg.cc/qq6FyvTm/10.png) |
 
 ---
 
