@@ -1,0 +1,113 @@
+<mxfile version="16.9.6" type="device" editor="www.draw.io">
+    <diagram name="Page-1" id="z6w1Vk6tX6oAIFtXCc1Y">
+        <mxGraphModel dx="946" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Main Container -->
+                <mxCell id="container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1a202c;strokeColor=#2d3748;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="770" height="360" as="geometry"/>
+                </mxCell>
+                
+                <!-- Title -->
+                <mxCell id="title" value="Llama 3.2 1B (INT8 Quantized) - ARM Performance Analysis" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="30" width="770" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Model Performance Section -->
+                <mxCell id="section1" value="Model Performance" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=0;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;rounded=0;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#4a5568;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="80" width="730" height="170" as="geometry"/>
+                </mxCell>
+                
+                <!-- Model Name -->
+                <mxCell id="modelName" value="&lt;b&gt;Llama 3.2 1B (INT8 Quantized)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#90cdf4;" parent="section1" vertex="1">
+                    <mxGeometry y="30" width="710" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- Performance Metrics Grid -->
+                <mxCell id="metricsGrid" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=#4a5568;fontColor=#e2e8f0;align=center;verticalAlign=middle;overflow=fill;rounded=0;" parent="section1" vertex="1">
+                    <mxGeometry y="60" width="710" height="100" as="geometry"/>
+                </mxCell>
+                
+                <!-- Metric 1: First Token Latency -->
+                <mxCell id="metric1" value="&lt;b&gt;First Token Latency&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:24px;color:#68d391;'&gt;62ms&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#4a5568;fontColor=#e2e8f0;" parent="metricsGrid" vertex="1">
+                    <mxGeometry x="20" y="10" width="200" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- Metric 2: Tokens per Second -->
+                <mxCell id="metric2" value="&lt;b&gt;Tokens per Second&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:24px;color:#68d391;'&gt;12.1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#4a5568;fontColor=#e2e8f0;" parent="metricsGrid" vertex="1">
+                    <mxGeometry x="250" y="10" width="200" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- Metric 3: Memory Usage -->
+                <mxCell id="metric3" value="&lt;b&gt;Memory Usage&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:24px;color#63b3ed;'&gt;2.0GB&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#4a5568;fontColor=#e2e8f0;" parent="metricsGrid" vertex="1">
+                    <mxGeometry x="480" y="10" width="200" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- Hardware Metrics Row -->
+                <mxCell id="hwMetrics" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=#4a5568;fontColor=#e2e8f0;align=center;verticalAlign=middle;overflow=fill;rounded=0;" parent="section1" vertex="1">
+                    <mxGeometry y="160" width="710" height="50" as="geometry"/>
+                </mxCell>
+                
+                <!-- CPU Utilization -->
+                <mxCell id="cpuMetric" value="&lt;b&gt;CPU Utilization&lt;/b&gt;&lt;br&gt;58% (Cortex-X4 + A720)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#4a5568;fontColor=#e2e8f0;" parent="hwMetrics" vertex="1">
+                    <mxGeometry x="20" y="5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Battery Drain -->
+                <mxCell id="batteryMetric" value="&lt;b&gt;Battery Drain&lt;/b&gt;&lt;br&gt;~17% per hour" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#4a5568;fontColor=#e2e8f0;" parent="hwMetrics" vertex="1">
+                    <mxGeometry x="380" y="5" width="310" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Custom ARM Bridge Section -->
+                <mxCell id="section2" value="With Custom ARM Bridge" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=0;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;rounded=0;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#4a5568;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="260" width="730" height="110" as="geometry"/>
+                </mxCell>
+                
+                <!-- Bridge Benefits -->
+                <mxCell id="bridgeBenefits" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=#4a5568;fontColor=#e2e8f0;align=center;verticalAlign=middle;overflow=fill;rounded=0;" parent="section2" vertex="1">
+                    <mxGeometry y="30" width="710" height="70" as="geometry"/>
+                </mxCell>
+                
+                <!-- Benefit 1: Speed -->
+                <mxCell id="benefit1" value="&lt;b&gt;41% faster&lt;/b&gt;&lt;br&gt;than generic implementation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#68d391;fontColor=#e2e8f0;" parent="bridgeBenefits" vertex="1">
+                    <mxGeometry x="20" y="10" width="210" height="50" as="geometry"/>
+                </mxCell>
+                
+                <!-- Benefit 2: Thermal -->
+                <mxCell id="benefit2" value="&lt;b&gt;Zero thermal throttling&lt;/b&gt;&lt;br&gt;during 30min session" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#68d391;fontColor=#e2e8f0;" parent="bridgeBenefits" vertex="1">
+                    <mxGeometry x="250" y="10" width="210" height="50" as="geometry"/>
+                </mxCell>
+                
+                <!-- Benefit 3: Scalability -->
+                <mxCell id="benefit3" value="&lt;b&gt;Scales to 3B models&lt;/b&gt;&lt;br&gt;on flagship ARM chips" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2d3748;strokeColor=#68d391;fontColor=#e2e8f0;" parent="bridgeBenefits" vertex="1">
+                    <mxGeometry x="480" y="10" width="210" height="50" as="geometry"/>
+                </mxCell>
+                
+                <!-- Performance Improvement Arrow -->
+                <mxCell id="arrow" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;strokeColor=#68d391;strokeWidth=2;fillColor=#68d391;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="425" y="250" as="sourcePoint"/>
+                        <mxPoint x="425" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Improvement Label -->
+                <mxCell id="improvementLabel" value="Performance Improvement" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#68d391;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="240" width="90" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- CPU Architecture Badge -->
+                <mxCell id="cpuBadge" value="ARMv9 Cortex-X4 + A720" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4c1d95;strokeColor=#6d28d9;fontColor=#ffffff;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="50" width="140" height="24" as="geometry"/>
+                </mxCell>
+                
+                <!-- INT8 Quantization Badge -->
+                <mxCell id="quantBadge" value="INT8 Quantization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#065f46;strokeColor=#047857;fontColor=#ffffff;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="50" width="140" height="24" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

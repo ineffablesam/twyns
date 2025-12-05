@@ -1,0 +1,157 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="arm-voice-assistant" name="ARM Voice Assistant System">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Main Container -->
+        <mxCell id="container" value="ARM Device (System on Chip)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;align=center;verticalAlign=top;spacingTop=10;arcSize=5;" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="760" height="640" as="geometry" />
+        </mxCell>
+        
+        <!-- Voice Input Section -->
+        <mxCell id="voice-input" value="🎤 Voice Input Module" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="140" width="680" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="voice-input-detail" value="ARM Audio DSP&#xa;• Captures audio input&#xa;• Noise cancellation&#xa;• Signal preprocessing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="240" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="voice-input-specs" value="Technical Specs:&#xa;• Sample Rate: 16-48kHz&#xa;• Bit Depth: 16/24-bit&#xa;• Low latency processing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="380" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 1 -->
+        <mxCell id="arrow1" value="Audio Stream" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" edge="1" parent="1" source="voice-input" target="llm-processing">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="220" as="sourcePoint" />
+            <mxPoint x="580" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- LLM Processing Section -->
+        <mxCell id="llm-processing" value="🧠 Local LLM Processing Core" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="680" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="llm-cpu" value="ARM CPU&#xa;• Speech-to-Text&#xa;• Context processing&#xa;• Task scheduling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="310" width="200" height="75" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="llm-npu" value="ARM NPU&#xa;• Neural inference&#xa;• LLM acceleration&#xa;• Quantized models" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="310" width="200" height="75" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="llm-gpu" value="ARM GPU&#xa;• Parallel processing&#xa;• Matrix operations&#xa;• NEON SIMD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="310" width="200" height="75" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 2 -->
+        <mxCell id="arrow2" value="Text Response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" edge="1" parent="1" source="llm-processing" target="text-output">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="400" as="sourcePoint" />
+            <mxPoint x="580" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Text Output Section -->
+        <mxCell id="text-output" value="💬 Instant Text Response" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="460" width="680" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="text-output-detail" value="ARM NEON SIMD Processing&#xa;• Ultra-fast text rendering&#xa;• Real-time display output&#xa;• Latency: &lt;100ms" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="260" y="480" width="640" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 3 (branching) -->
+        <mxCell id="arrow3" value="Standard Mode&#xa;(Text Output)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;dashed=1;" edge="1" parent="1" source="text-output">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint x="400" y="540" as="sourcePoint" />
+            <mxPoint x="400" y="650" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="arrow4" value="Pulse Mode&#xa;(Voice Output)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" edge="1" parent="1" source="text-output">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="540" as="sourcePoint" />
+            <mxPoint x="760" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Standard Output -->
+        <mxCell id="standard-output" value="🔊 Standard Text Output&#xa;Display on screen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="260" y="650" width="280" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Pulse Mode Section -->
+        <mxCell id="pulse-mode" value="✨ PULSE MODE - Voice Cloning Feature" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;align=center;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="620" y="590" width="280" height="110" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pulse-detail" value="Cartesia AI Voice Cloning&#xa;• Text → Cloned Voice&#xa;• Your voice responds&#xa;• Natural prosody&#xa;• Real-time synthesis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="635" y="625" width="250" height="65" as="geometry" />
+        </mxCell>
+        
+        <!-- Info Boxes -->
+        <mxCell id="info-box1" value="100% On-Device AI Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=13;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="info-box2" value="Privacy First&#xa;No cloud dependency" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=11;fontColor=#000000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="info-box3" value="Energy Efficient&#xa;Optimized for ARM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontSize=11;fontColor=#000000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Cloud Connection -->
+        <mxCell id="cloud-cartesia" value="☁️ Cartesia AI&#xa;Voice Cloning API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff4e6;strokeColor=#d6b656;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="620" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="cloud-arrow" value="API Call" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;dashed=1;" edge="1" parent="1" source="pulse-mode" target="cloud-cartesia">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="650" as="sourcePoint" />
+            <mxPoint x="990" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend" value="Legend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;align=center;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="140" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-1" value="On-Device Processing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="550" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-2" value="Cloud Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="590" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-3" value="Optional Feature" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="630" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-4" value="Standard Output" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="670" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Title -->
+        <mxCell id="title" value="ARM Voice Assistant System Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="320" y="20" width="520" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Performance Note -->
+        <mxCell id="perf-note" value="⚡ System Performance:&#xa;• Total Latency: &lt;200ms (text mode)&#xa;• Voice Processing: ~1-2s (pulse mode)&#xa;• Power Consumption: &lt;2W typical&#xa;• Model Size: 1-7B parameters" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1976d2;fontSize=11;align=left;spacingLeft=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="990" y="140" width="240" height="120" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

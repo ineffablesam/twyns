@@ -1,0 +1,186 @@
+<mxfile version="16.9.6" type="device" editor="www.draw.io">
+    <diagram name="Page-1" id="z6w1Vk6tX6oAIFtXCc1Y">
+        <mxGraphModel dx="946" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                
+                <!-- Main Container -->
+                <mxCell id="container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1a202c;strokeColor=#2d3748;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="770" height="410" as="geometry"/>
+                </mxCell>
+                
+                <!-- Title Section -->
+                <mxCell id="titleContainer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#111827;strokeColor=#374151;gradientColor=#1e40af;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="770" height="80" as="geometry"/>
+                </mxCell>
+                
+                <!-- Benchmark Title -->
+                <mxCell id="title" value="&lt;b&gt;Mobile AI Inference Benchmark&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="35" width="770" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Device Info -->
+                <mxCell id="deviceInfo" value="&lt;b&gt;Samsung S24&lt;/b&gt; | Snapdragon 8 Gen 3 | ARM Cortex-X4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#93c5fd;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="65" width="770" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- Snapdragon Badge -->
+                <mxCell id="snapdragonBadge" value="Snapdragon 8 Gen 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e40af;strokeColor=#3b82f6;fontColor=#ffffff;fontSize=11;gradientDirection=north;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="105" width="150" height="28" as="geometry"/>
+                </mxCell>
+                
+                <!-- ARM Badge -->
+                <mxCell id="armBadge" value="ARM Cortex-X4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#065f46;strokeColor=#10b981;fontColor=#ffffff;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="105" width="130" height="28" as="geometry"/>
+                </mxCell>
+                
+                <!-- INT8 Badge -->
+                <mxCell id="int8Badge" value="INT8 Quantization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7c2d12;strokeColor=#ea580c;fontColor=#ffffff;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="105" width="130" height="28" as="geometry"/>
+                </mxCell>
+                
+                <!-- Main Content Container -->
+                <mxCell id="contentContainer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="140" width="730" height="260" as="geometry"/>
+                </mxCell>
+                
+                <!-- Left Column: Baseline Performance -->
+                <mxCell id="baselineColumn" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=0;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2937;strokeColor=#374151;fontColor=#ffffff;" parent="contentContainer" vertex="1">
+                    <mxGeometry width="350" height="260" as="geometry"/>
+                </mxCell>
+                
+                <!-- Baseline Header -->
+                <mxCell id="baselineHeader" value="&lt;b&gt;Baseline Performance&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#ffffff;" parent="baselineColumn" vertex="1">
+                    <mxGeometry y="10" width="350" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Model Info -->
+                <mxCell id="modelInfo" value="&lt;b&gt;Llama 3.2 1B (INT8 Quantized)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#60a5fa;" parent="baselineColumn" vertex="1">
+                    <mxGeometry y="40" width="350" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- Performance Metrics Container -->
+                <mxCell id="metricsContainer" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=#374151;fontColor=#e2e8f0;align=center;verticalAlign=middle;overflow=fill;rounded=0;" parent="baselineColumn" vertex="1">
+                    <mxGeometry y="70" width="350" height="180" as="geometry"/>
+                </mxCell>
+                
+                <!-- Metric Row 1 -->
+                <mxCell id="metricRow1" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=#374151;fontColor=#e2e8f0;align=center;verticalAlign=middle;overflow=fill;rounded=0;" parent="metricsContainer" vertex="1">
+                    <mxGeometry y="10" width="350" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- First Token Latency -->
+                <mxCell id="firstToken" value="&lt;b&gt;First Token Latency&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:18px;color#34d399;'&gt;62ms&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#111827;strokeColor=#374151;fontColor=#e2e8f0;" parent="metricRow1" vertex="1">
+                    <mxGeometry x="20" y="5" width="150" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Tokens per Second -->
+                <mxCell id="tokensPerSec" value="&lt;b&gt;Tokens/sec&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:18px;color#34d399;'&gt;12.1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#111827;strokeColor=#374151;fontColor=#e2e8f0;" parent="metricRow1" vertex="1">
+                    <mxGeometry x="180" y="5" width="150" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Metric Row 2 -->
+                <mxCell id="metricRow2" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=#374151;fontColor=#e2e8f0;align=center;verticalAlign=middle;overflow=fill;rounded=0;" parent="metricsContainer" vertex="1">
+                    <mxGeometry y="60" width="350" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Memory Usage -->
+                <mxCell id="memoryUsage" value="&lt;b&gt;Memory Usage&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:18px;color#60a5fa;'&gt;2.0GB&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#111827;strokeColor=#374151;fontColor=#e2e8f0;" parent="metricRow2" vertex="1">
+                    <mxGeometry x="20" y="5" width="150" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- CPU Utilization -->
+                <mxCell id="cpuUtil" value="&lt;b&gt;CPU Utilization&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:18px;color#f87171;'&gt;58%&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#111827;strokeColor=#374151;fontColor=#e2e8f0;" parent="metricRow2" vertex="1">
+                    <mxGeometry x="180" y="5" width="150" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Metric Row 3 -->
+                <mxCell id="metricRow3" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=#374151;fontColor=#e2e8f0;align=center;verticalAlign=middle;overflow=fill;rounded=0;" parent="metricsContainer" vertex="1">
+                    <mxGeometry y="110" width="350" height="60" as="geometry"/>
+                </mxCell>
+                
+                <!-- CPU Architecture -->
+                <mxCell id="cpuArch" value="&lt;b&gt;CPU Architecture&lt;/b&gt;&lt;br&gt;Cortex-X4 + A720" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#111827;strokeColor=#374151;fontColor=#e2e8f0;fontSize=11;" parent="metricRow3" vertex="1">
+                    <mxGeometry x="20" y="10" width="150" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Battery Drain -->
+                <mxCell id="batteryDrain" value="&lt;b&gt;Battery Drain&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:16px;color#fbbf24;'&gt;~17% / hour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#111827;strokeColor=#374151;fontColor=#e2e8f0;" parent="metricRow3" vertex="1">
+                    <mxGeometry x="180" y="10" width="150" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Right Column: Custom ARM Bridge -->
+                <mxCell id="bridgeColumn" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=0;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;rounded=1;whiteSpace=wrap;html=1;fillColor=#1f2937;strokeColor=#10b981;fontColor=#ffffff;strokeWidth=2;" parent="contentContainer" vertex="1">
+                    <mxGeometry x="380" width="350" height="260" as="geometry"/>
+                </mxCell>
+                
+                <!-- Bridge Header -->
+                <mxCell id="bridgeHeader" value="&lt;b&gt;With Custom ARM Bridge&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#ffffff;" parent="bridgeColumn" vertex="1">
+                    <mxGeometry y="10" width="350" height="30" as="geometry"/>
+                </mxCell>
+                
+                <!-- Performance Tag -->
+                <mxCell id="performanceTag" value="&lt;b style='color:#10b981'&gt;Optimized Implementation&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#10b981;" parent="bridgeColumn" vertex="1">
+                    <mxGeometry y="40" width="350" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- Bridge Benefits Container -->
+                <mxCell id="bridgeBenefits" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=#10b981;fontColor=#e2e8f0;align=center;verticalAlign=middle;overflow=fill;rounded=0;" parent="bridgeColumn" vertex="1">
+                    <mxGeometry y="70" width="350" height="180" as="geometry"/>
+                </mxCell>
+                
+                <!-- Speed Improvement -->
+                <mxCell id="speedImprovement" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#064e3b;strokeColor=#10b981;fontColor=#ffffff;verticalAlign=top;" parent="bridgeBenefits" vertex="1">
+                    <mxGeometry x="20" y="20" width="310" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="speedIcon" value="🚀" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="speedImprovement" vertex="1">
+                    <mxGeometry x="10" y="5" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="speedText" value="&lt;b&gt;41% Faster&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;'&gt;Than generic implementation&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" parent="speedImprovement" vertex="1">
+                    <mxGeometry x="45" y="5" width="255" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Thermal Performance -->
+                <mxCell id="thermalPerformance" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#064e3b;strokeColor=#10b981;fontColor=#ffffff;verticalAlign=top;" parent="bridgeBenefits" vertex="1">
+                    <mxGeometry x="20" y="80" width="310" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="thermalIcon" value="❄️" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="thermalPerformance" vertex="1">
+                    <mxGeometry x="10" y="5" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="thermalText" value="&lt;b&gt;Zero Thermal Throttling&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;'&gt;During 30min continuous session&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" parent="thermalPerformance" vertex="1">
+                    <mxGeometry x="45" y="5" width="255" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Scalability -->
+                <mxCell id="scalability" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#064e3b;strokeColor=#10b981;fontColor=#ffffff;verticalAlign=top;" parent="bridgeBenefits" vertex="1">
+                    <mxGeometry x="20" y="140" width="310" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="scaleIcon" value="📈" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="scalability" vertex="1">
+                    <mxGeometry x="10" y="5" width="30" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="scaleText" value="&lt;b&gt;Scales to 3B Models&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:11px;'&gt;On flagship ARM chips&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" parent="scalability" vertex="1">
+                    <mxGeometry x="45" y="5" width="255" height="40" as="geometry"/>
+                </mxCell>
+                
+                <!-- Performance Improvement Arrow -->
+                <mxCell id="improvementArrow" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;strokeColor=#10b981;strokeWidth=3;fillColor=#10b981;dashed=1;dashPattern=8 8;" parent="contentContainer" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="350" y="130" as="sourcePoint"/>
+                        <mxPoint x="380" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                
+                <!-- Arrow Label -->
+                <mxCell id="arrowLabel" value="+41% Performance" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#10b981;rotation=-90;" parent="contentContainer" vertex="1">
+                    <mxGeometry x="365" y="110" width="40" height="20" as="geometry"/>
+                </mxCell>
+                
+                <!-- Footer Note -->
+                <mxCell id="footer" value="Mobile AI Inference Benchmark | Samsung S24 | Snapdragon 8 Gen 3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#9ca3af;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="410" width="770" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
